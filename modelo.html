@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja da Berrine</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<!--<section id="corpo"></section>-->
+<!--Dividi as parteshttps://www.youtube.com/watch?v=unvKmK3wZEQ-->
+
+<body>
+    <header id="cabacalho">
+        <!--<h1>Kamisaria Zanuto com. e confecções ME.</h1>-->
+    </header>
+
+    <section>
+        <div id="res">
+            <img id="icone" src="../cursohtml5/logo.png" alt="100">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li>
+                        <a href="https://www.instagram.com/kamisariazanuto/" target="_blank">colarinho</a></li>
+                    <li>Punho</li>
+                    <li>Monograma</li>
+                </ul>
+            </nav>
+
+            <h1>Dados para Cadastro</h1>
+
+            <form method="POST" id="fContato" action="maito: roger.ngt@hotmail.com" onclick="calc_total();">
+                <fieldset id="senha">
+                    <legend>Password</legend>
+                    <p><label for="cSen">Inserir sua Senha:</label> <input type="password" name="tSen" autofocus id="cSen" size="8" maxlength="8" placeholder="8 dígitos"></p>
+
+                </fieldset>
+                <fieldset id="dat">
+                    <legend>Data do pedido</legend>
+                    <input type="date" name="tDat" id="cdat"> Data da entrega
+                </fieldset>
+                <fieldset id="usuario">
+                    <legend id="usuario">Informe seus dados</legend>
+                    <p><label for="cNom">Nome:</label> <input type="text" name="tNom" id="cNom" size="22" maxlength="12" placeholder="Nome" min="0">
+                        <label for="cSno">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sobre nome:</label> <input type="text" name="tSno" id="cSno" size="40" maxlength="40" placeholder="sobre nome"></p>
+                    <p><label for="cMai">e-mail:</label> <input type="email" name="tMai" id="cMai" min="0" size="40" maxlength="40" placeholder="e-mail">
+                        <label for="cNas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data/Nasc:</label> <input type="number" name="tNas" id="cNas" min="0" size="10" maxlength="10" placeholder="Ano de nascimento"></p>
+                    <p><label for="cRes">Tel./res.</label> <input type="number" name="tTel" id="cRes" min="0" size="15" maxlength="15" placeholder="Tel. Residencial">
+                        <label for="cCel">Celular:</label> <input type="number" name="tCel" id="cCel" min="0" size="16" maxlength="16" placeholder="(55)11 96980-9561"></p>
+
+                    <fieldset id="sexo">
+                        <legend>Sexo</legend>
+                        <input type="radio" name="tSex" id="CMas" checked>
+                        <label for="cMas">Masculino</label>
+                        <input type="radio" name="tSex" id="cFem">
+                        <label for="cFem">Feminino</label>
+                    </fieldset>
+                    <fieldset id="endereco">
+                        <legend>Endereço</legend>
+                        <p><label for="cEnd">Logradouro:</label> <input type="text" name="tEnd" id="cEnd" size="35" maxlength="80" placeholder="Rua, Av, Trav, ...">
+                            <label for="cNum">Nº:</label> <input type="number" name="tNum" id="cNum" min="0" max="99999" size="5" maxlength="5" placeholder="Nº">
+                            <label for="cCom">Compl.:</label> <input type="text" name="tCom" id="cCom" size="10" maxlength="20" placeholder="Complemento"></p>
+                        <label for="cEst">Estado:</label>
+                        <select name="tEst" id="cEst"> 
+                            <optgroup label="Região Sudeste">
+                                <option value="SP" selected>São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option> 
+                                <option value="MG">Minas Gerais</option>                        
+                            </optgroup>
+                                <optgroup label= "Região Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="SC">Sta. Catarina</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                            </optgroup>
+                                <optgroup label="Região Nordeste">
+                                <option value="CE">Ceará</option>
+                                <option value="BA">Bahia</option>
+                                <option value="DF">Brasília</option>
+                            </optgroup>
+                            </select>
+
+                        <label for="cCid">&nbsp;&nbsp;&nbsp;Cidade:</label>
+                        <input type="text" name="tCid" id="cCid" size="25" maxlength="25" placeholder="Sua Cidade" list="cidades">
+                        <datalist id="cidades">                            
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niterói"></option>
+                            <option value="Belford Roxo"></option>
+                            <option value="Osasco"></option>
+                            <option value="Barueri"></option>
+                            <option value="Santo André"></option>
+                            <option value="São Caetano do sul"></option>
+                            <option value="Guarulhos"></option>                            
+                        
+                        <label for="cCep">&nbsp;&nbsp;&nbsp;Cep:</label> <input type="text" name="tCep" id="cCep" size="9" maxlength="9" placeholder="Cep">
+                    </p>                        
+                    </fieldset>
+                    <!--</section>-->
+                    <!--acima linha 12-->
+                    <!--<aside id="lateral">-->
+                    <!--abaixo linha 179-->                    
+                    <fieldset id="pesCli">
+                        <legend>Pesquisa</legend>
+                        <p>Informe uma opção:</p>
+                        <form>
+                            <input type="checkbox" name="micheckbox" id="miID"/>
+                            
+                        </form>                        
+                    </fieldset>
+                    <fieldset id="med">
+                        <legend>Medidas</legend>
+                        <p>
+                        <label for="cCol">Colar:&nbsp;&nbsp;&nbsp; </label> <input type="text" name="tCol" id="cCol" size="5" maxlength="5" placeholder="Colar">
+                        <label for="cPal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pala:&nbsp;&nbsp;&nbsp;&nbsp; </label> <input type="text" name="tPal" id="cPal" size="5" maxlength="10" placeholder="Pala">
+                        <label for="cMan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manga:</label> <input type="text" name="tMan" id="cMan" size="5" maxlength="5" placeholder="Manga">
+                        <label for="cTor">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tórax:&nbsp;</label> <input type="text" name="tTor" id="cTor" size="5" maxlength="5" placeholder="Tórax">
+                        </p>
+                        <p>
+                        <label for="cCin">Cintura:</label> <input type="text" name="tCin" id="cCin" size="5" maxlength="5" placeholder="Cintura">
+                        <label for="cQua">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quadril: </label> <input type="text" name="tQua" id="cQua" size="5" maxlength="5" placeholder="Quadril">
+                        <label for="cCum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cumpr:</label> <input type="text" name="tCum" id="cCum" size="5" maxlength="5" placeholder="Cumprimento">
+                        <label for="cPun">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Punho:</label> <input type="text" name="tPun" id="cPun" size="5" maxlength="5" placeholder="Punho">
+                        </p>
+                        
+                    </fieldset>
+                    <fieldset id="lisa">
+                        
+                        <legend>Frente</legend>
+                        <input type="radio" name="tLis" id="cLis"> <label for="cLis">Lisa</label>
+                        <input type="radio" name="tDup" id="cDup"> <label for="cDup">Duplo</label>
+                        
+                    </fieldset>
+
+                    <fieldset id="mono">
+                        
+                            <legend>Monograma</legend>
+                            <p>
+                                <label for="cIni">Iniciais do nome:</label> <input type="text" name="tIni" id="cIni" size="8" maxlength="8">
+                            </p>
+                        
+                    </fieldset>
+                    <fieldset id="colar">
+                        
+                            <legend>Tipo de colarinho</legend>
+                            <p>
+                                <input type="radio" name="radcol" id="ita" checked>
+                                <label for="ita">Itáliano</label>
+                                <input type="radio" name="radcol" id="fra">
+                                <label for="Fra">Francês</label>
+                                <input type="radio" name="radcol" id="Ing">
+                                <label for="ing">Inglês</label>
+                                <input type="radio" name="radcol" id="dou">
+                                <label for="dou">Douglas</label>
+                                <input type="radio" name="radcol" id="win">
+                                <label for="win">Windsor</label>
+                                <input type="radio" name="radcol" id="mon">
+                                <label for="mon">Mónaco</label></p>
+                            <p><input type="radio" name="radcol" id="ingr">
+                                <label for="ingr">Inglês Arrendondado</label>
+                                <input type="radio" name="radcol" id="jdj">
+                                <label for="jdj">João D.Jr</label>
+                                <input type="radio" name="radcol" id="P/P">
+                                <label for="p/p">P/Presilha</label>
+                                <input type="radio" name="radcol" id="cha">
+                                <label for="cha">Chanfrado</label></p>
+                        
+                    </fieldset>
+                    <fieldset id="pun">
+                        
+                            <legend>Tipo de punho</legend>
+                            <P><input type="radio" name="radpun" id="pun" checked>
+                                <label for="pun">Redondo</label>
+                                <input type="radio" name="radpun" id="cha">
+                                <label for="cha">Chanfrado</label>
+                                <input type="radio" name="radpun" id="abt">
+                                <label for="abt">Abotoadura</label></P>
+                        
+                    </fieldset>
+                    <!--</aside>-->
+                    <!--abertura acima linha 100-->
+                    <!--<footer id="rodape">-->
+                    <fieldset id="metro"> <br>
+                        
+                            <legend>Metragem</legend>
+                            
+                            <P></P>
+                            <p></p>
+                       
+                    </fieldset>
+                    
+                    <fieldset id="mensagem">
+                        
+                            <legend>Mensagem do Usuário</legend>
+                            <p><label for="cMsg">Seus comentários</label>
+                                <textarea name="tMsg" id="cMsg" cols="95" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
+                            </p>
+                        
+                    </fieldset>
+
+                    <p>
+                        <input type="button" value="Enviar" onclick="verificar()">
+                        <!--<input type="image" src="cursohtml5/buttonverde.png" </p>-->
+            </form>
+            <footer id="rodape"></footer>
+        </div>
+
+    </section>
+    </footer>
+    <footer>
+        <p>&copy; Kamisaria Zanuto desde 1975 <br/>
+            <a href="https://www.instagram.com/kamisariazanuto/" target="_blank">Facebook</a> |
+            <a href="https://www.facebook.com/kamisaria/" target="_blank">Instagram</a></p>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
